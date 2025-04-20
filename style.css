@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #01579b;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-logo {
+  width: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+h1 {
+  color: #01579b;
+}
+
+select, textarea, input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #0288d1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #01579b;
+}
+
+/* Tambahan: Styling untuk teks pendukung */
+.pendukung {
+  margin-top: 30px;
+  max-width: 700px;
+  background-color: #e1f5fe;
+  padding: 20px;
+  border-left: 6px solid #0288d1;
+  border-radius: 10px;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.pendukung em {
+  color: #0288d1;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}

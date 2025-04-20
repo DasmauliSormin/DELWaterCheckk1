@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DEL Water Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <img src="image.png" alt="Logo IT Del" class="nav-logo">
+    <ul>
+      <li><a href="#" onclick="navigate('home')">Home</a></li>
+      <li><a href="#" onclick="navigate('about')">Tentang</a></li>
+      <li><a href="#" onclick="navigate('report')">Pelaporan</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten Dinamis -->
+  <main>
+    <!-- Home -->
+    <section id="home" class="page active">
+      <h1>Selamat Datang di DEL Water Check</h1>
+      <p>Aplikasi untuk memudahkan mahasiswa melaporkan kondisi keran air kampus IT Del.</p>
+
+      <!-- Kalimat Pendukung Tambahan -->
+      <div class="pendukung">
+        <p>
+          Di tengah aktivitas padat kampus, akses terhadap air bersih adalah hal penting.
+          DEL Water Check hadir untuk membantu kita semua menjaga fasilitas bersama.
+        </p>
+        <p>
+          Setiap laporanmu dapat menjadi langkah kecil untuk perubahan besar.
+          Yuk, jadikan kampus kita lebih nyaman, bersih, dan efisien!
+        </p>
+        <p><em>“Air mengalir untuk semua, mari pastikan tidak ada yang terhambat.”</em></p>
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="about" class="page">
+      <h1>Tentang Aplikasi</h1>
+      <p><strong>DEL Water Check</strong> hadir sebagai solusi cerdas untuk menjaga kualitas dan kenyamanan fasilitas air di kampus IT Del.</p>
+      <p>Keran yang bocor, tersumbat, atau bahkan tidak berfungsi sering kali luput dari perhatian. Melalui aplikasi ini, mahasiswa dapat <strong>melaporkan kondisi keran</strong> secara langsung dan praktis.</p>
+      <p>Dengan partisipasi aktif seluruh warga kampus, kita bisa menciptakan lingkungan yang bersih, sehat, dan nyaman.</p>
+      <p>💧 <em>Setiap laporan kecilmu, berdampak besar bagi kebaikan bersama.</em></p>
+    </section>
+
+    <!-- Pelaporan -->
+    <section id="report" class="page">
+      <h1>Form Pelaporan</h1>
+      <p>Bantu kami dengan melaporkan kondisi keran yang kurang baik.</p>
+      
+      <!-- Nama -->
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+
+      <!-- Email -->
+      <input type="email" id="email" placeholder="Email Anda" required>
+
+      <!-- Lokasi -->
+      <select id="lokasi" required>
+        <option value="">-- Pilih Lokasi Keran --</option>
+        <option value="Pencucian Sendok Kantin Andaliman">Pencucian Sendok Kantin Andaliman</option>
+        <option value="Pencucian Sendok Kantin 1 Rias">Pencucian Sendok Kantin 1 Rias</option>
+        <option value="Pencucian Sendok Kantin 2 Rias">Pencucian Sendok Kantin 2 Rias</option>
+      </select>
+
+      <!-- Laporan -->
+      <textarea id="laporan" rows="5" placeholder="Tulis keluhan Anda..." required></textarea>
+
+      <!-- Foto Keran -->
+      <label for="fotoKeran">Unggah Foto Keran yang Rusak:</label>
+      <input type="file" id="fotoKeran" accept="image/*">
+
+      <button onclick="kirimLaporan()">Kirim Laporan</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
